@@ -16,7 +16,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-//font-family: "Arial";     
+  font-family: "微软雅黑";     
 }
 /*声明rem的大小*/
 @rem:40rem;
@@ -34,7 +34,7 @@ body {
     display: none;
     width: 100%;
     height: 100%;
-    background-image: url(../img/6.jpg);
+    background-image: url(../img/10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -42,7 +42,6 @@ body {
     top: 0;
     z-index: 10;
     transition: 2s;
-//  display: none;
 }
 .lock-time{
     width: 272/@rem;
@@ -163,6 +162,7 @@ body {
 }
 //主界面
 .interface{
+    display: none;
     width: 300%;
     height: 100%;
     transition: 0.5s;
@@ -296,28 +296,34 @@ body {
     float: right;
     margin-right: 20/@rem;
 }
-.interface-warp .warp-siri ul{
+.interface-warp .warp-siri .often{
     width: 100%;
     height: auto;
 }
-.interface-warp .warp-siri ul li{
-    background: url(../img/App-Store.png) no-repeat 0/@rem 0/@rem;
-    background-size: 102/@rem 102/@rem;
+.interface-warp .warp-siri .often div{
     width: 102/@rem;
-    height: 40/@rem;
-    padding-top: 102/@rem;
+    height: 142/@rem;
     float: left;
     margin-top: 30/@rem;
     margin-left: 35/@rem;
 }
-.interface-warp .warp-siri ul li b{
+.interface-warp .warp-siri .often div a{
     display: block;
     width: 100%;
-    height: 40/@rem;
-    line-height: 40/@rem;
-    font-size: 22/@rem;
-    color: #000000;
-    text-align: center
+    height: 102/@rem;
+}
+.interface-warp .warp-siri .often div a img{
+    width: 100%;
+    height: 100%;
+}
+.interface-warp .warp-siri .often div p{
+    width: 102/@rem;
+    height: 39/@rem;
+    text-align: center;
+    line-height: 39/@rem;
+    color: #FFFFFF;
+    font-size: 18/@rem;
+    letter-spacing: 3/@rem;
 }
 .interface-warp .warp-sky{
     width: 604/@rem;
@@ -572,4 +578,246 @@ body {
     color: #FFFFFF;
     font-size: 18/@rem;
     letter-spacing: 3/@rem;
+}
+
+//渲染
+.drawing{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+//      display: none;  
+}
+//计算器   
+.counter{
+    width: 100%;
+    height: 1278/@rem;
+    background: #333333;
+}
+.counter #back{
+    display: block;
+    width: 100%;
+    height: 122/@rem;
+    font-size: 30/@rem;
+    padding-top: 20/@rem;   
+    color: #FFFFFF;
+}
+.counter .num-num{
+    width: 620/@rem;
+    height: 198/@rem;
+    line-height: 198/@rem;
+    font-size: 120/@rem;
+    color: #FFFFFF;
+    background: #333333;
+    outline: none;
+    border: none;
+}
+.counter .counter-key{
+    width: 632/@rem;
+    height: 790/@rem;
+    background: #FF0000;
+    border: 4/@rem solid #000000;
+}
+.counter .counter-key a{
+    display: block;
+    width: 156/@rem;
+    height: 156/@rem;
+    float: left;
+    border: 1/@rem solid #666666;
+    text-align: center;
+    font-size: 50/@rem;
+    line-height: 156/@rem;
+    color: #000000;
+    background: #cccccc;
+}
+.counter .counter-key a:nth-of-type(1){
+    width: 314/@rem;
+}
+.counter .counter-key a:nth-of-type(16){
+    width: 314/@rem;
+}
+.counter .counter-key a:nth-of-type(17){
+    width: 314/@rem;
+}
+//日历
+.kalendar{
+    width: 100%;
+    height: 1110/@rem;
+    margin-top: 26/@rem;
+}
+.kalendar .kalendar-back{
+    width: 100%;
+    height: 75/@rem;
+    padding-top: 7/@rem;
+    border-bottom: 1/@rem solid red;
+}
+.kalendar .kalendar-back span{
+    display: block;
+    width: 50/@rem;
+    height: 75/@rem;
+    line-height: 75/@rem;
+    font-size: 40/@rem;
+    text-align: center;
+    float: left;
+    color: red;
+}
+.kalendar .kalendar-back .back-year{
+    width: 300/@rem;
+    height: 75/@rem;
+    line-height: 75/@rem;
+    color: red;
+    font-size: 30/@rem;
+    text-align: right;
+    float: right;
+    margin-right: 50/@rem;
+}
+.kalendar .week{
+    width: 606/@rem;
+    height: 50/@rem;
+    border-bottom: 1/@rem solid #333333;
+    padding-left: 15/@rem;
+    padding-right: 19/@rem;
+}
+.kalendar .week span{
+    display: block;
+    width: 86/@rem;
+    height: 50/@rem;
+    text-align: center;
+    line-height: 50/@rem;
+    font-size: 25/@rem;
+    color: #000000;
+    float: left;
+}
+.kalendar .days{
+    width: 606/@rem;
+    height: 790/@rem;
+    padding-top: 110/@rem;
+    background: rgba(153,204,204,.3);
+    padding-left: 15/@rem;
+    padding-right: 19/@rem;
+}
+.kalendar .days span{
+    width: 70/@rem;
+    height: 70/@rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70/@rem;
+    font-size: 40/@rem;
+    background: tan;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    margin-left: 15/@rem;
+    margin-bottom: 50/@rem;
+}
+.kalendar .days .old{
+    background: #CCCCCC;
+}
+.kalendar .days .active{
+    background: red;
+}
+.kalendar .cut{
+    width: 606/@rem;
+    height: 75/@rem;
+    padding-left: 15/@rem;
+    padding-right: 19/@rem;
+}
+.kalendar .cut span{
+    text-align: center;
+    display: block;
+    width: 200/@rem;
+    height: 75/@rem;
+    line-height: 75/@rem;
+    font-size: 40/@rem;
+    letter-spacing: 3/@rem;
+    color: red;
+}
+.kalendar .cut .prev{
+    float: left;
+}
+.kalendar .cut .next{
+    float: right;
+}
+//相册
+.photo{
+    width: 620/@rem;
+    height: 100%;
+    margin-top: 26/@rem;
+    padding-left: 10/@rem;
+    padding-right: 10/@rem;
+    overflow: auto;
+}
+.photo p{
+    width: 100%;
+    height: 40/@rem;
+}
+.photo p span{
+    display: block;
+    width: 200/@rem;
+    height: 40/@rem;
+    line-height: 40/@rem;
+    color: red;
+    font-size: 26/@rem;
+    text-align: center; 
+}
+.photo p .photo-back{
+    float: left;
+    width: 40/@rem;
+    font-size: 40/@rem;
+}
+.photo p .screen-bg{
+    float: right;
+}
+.photo p .interface-bg{
+    float: right;
+}
+.photo .photo-img{
+    width: 100%;
+}
+.photo .photo-img div{
+    width: 280/@rem;
+    height: 350/@rem;
+    float: left;
+    position: relative;
+    margin-left: 20/@rem;
+    margin-top: 30/@rem;
+}
+.photo .photo-img div:nth-child(even){
+    margin-top: 50/@rem;
+}
+.photo .photo-img div span{
+    display: block;
+    width: 30/@rem;
+    height: 30/@rem;
+    border: 4/@rem solid #333333;
+    position: absolute;
+    right: -15/@rem;
+    top: -15/@rem;              
+}
+.photo .photo-img div .span_true{
+    background: url(../img/true.jpg) no-repeat center center;
+    background-size: cover;
+    border: 4/@rem solid seagreen;
+}
+.photo .photo-img div img{ 
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+////天气
+
+.butt{
+    width: 90%;
+    height: 100/@rem;
+    font-size: 50/@rem;
+    line-height: 100/@rem;
+}
+#list{
+    width: 100/@rem;
+    height: 50/@rem;
+    background: #000000;
+    color: #FFFFFF;
+    display: block;
 }

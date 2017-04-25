@@ -140,6 +140,13 @@ var data = [
 		type:'one'
 	},
 	{
+		name:'计算器',
+		hash:'counter',
+		id:+new Date(),
+		img:'img/counter.png',
+		type:'one'
+	},
+	{
 		name:'博客',
 		hash:'blog',
 		id:+new Date(),

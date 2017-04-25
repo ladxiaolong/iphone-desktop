@@ -16,6 +16,7 @@ html {
 body {
   width: 100%;
   height: 100%;
+  font-family: "微软雅黑";
 }
 /*声明rem的大小*/
 .box {
@@ -31,7 +32,7 @@ body {
   display: none;
   width: 100%;
   height: 100%;
-  background-image: url(../img/6.jpg);
+  background-image: url(../img/10.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -158,6 +159,7 @@ body {
   font-family: "agency fb";
 }
 .interface {
+  display: none;
   width: 300%;
   height: 100%;
   transition: 0.5s;
@@ -290,28 +292,34 @@ body {
   float: right;
   margin-right: 0.5rem;
 }
-.interface-warp .warp-siri ul {
+.interface-warp .warp-siri .often {
   width: 100%;
   height: auto;
 }
-.interface-warp .warp-siri ul li {
-  background: url(../img/App-Store.png) no-repeat 0rem 0rem;
-  background-size: 2.55rem 2.55rem;
+.interface-warp .warp-siri .often div {
   width: 2.55rem;
-  height: 1rem;
-  padding-top: 2.55rem;
+  height: 3.55rem;
   float: left;
   margin-top: 0.75rem;
   margin-left: 0.875rem;
 }
-.interface-warp .warp-siri ul li b {
+.interface-warp .warp-siri .often div a {
   display: block;
   width: 100%;
-  height: 1rem;
-  line-height: 1rem;
-  font-size: 0.55rem;
-  color: #000000;
+  height: 2.55rem;
+}
+.interface-warp .warp-siri .often div a img {
+  width: 100%;
+  height: 100%;
+}
+.interface-warp .warp-siri .often div p {
+  width: 2.55rem;
+  height: 0.975rem;
   text-align: center;
+  line-height: 0.975rem;
+  color: #FFFFFF;
+  font-size: 0.45rem;
+  letter-spacing: 0.075rem;
 }
 .interface-warp .warp-sky {
   width: 15.1rem;
@@ -558,4 +566,238 @@ body {
   color: #FFFFFF;
   font-size: 0.45rem;
   letter-spacing: 0.075rem;
+}
+.drawing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #FFFFFF;
+}
+.counter {
+  width: 100%;
+  height: 31.95rem;
+  background: #333333;
+}
+.counter #back {
+  display: block;
+  width: 100%;
+  height: 3.05rem;
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+  color: #FFFFFF;
+}
+.counter .num-num {
+  width: 15.5rem;
+  height: 4.95rem;
+  line-height: 4.95rem;
+  font-size: 3rem;
+  color: #FFFFFF;
+  background: #333333;
+  outline: none;
+  border: none;
+}
+.counter .counter-key {
+  width: 15.8rem;
+  height: 19.75rem;
+  background: #FF0000;
+  border: 0.1rem solid #000000;
+}
+.counter .counter-key a {
+  display: block;
+  width: 3.9rem;
+  height: 3.9rem;
+  float: left;
+  border: 0.025rem solid #666666;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 3.9rem;
+  color: #000000;
+  background: #cccccc;
+}
+.counter .counter-key a:nth-of-type(1) {
+  width: 7.85rem;
+}
+.counter .counter-key a:nth-of-type(16) {
+  width: 7.85rem;
+}
+.counter .counter-key a:nth-of-type(17) {
+  width: 7.85rem;
+}
+.kalendar {
+  width: 100%;
+  height: 27.75rem;
+  margin-top: 0.65rem;
+}
+.kalendar .kalendar-back {
+  width: 100%;
+  height: 1.875rem;
+  padding-top: 0.175rem;
+  border-bottom: 0.025rem solid #ff0000;
+}
+.kalendar .kalendar-back span {
+  display: block;
+  width: 1.25rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  font-size: 1rem;
+  text-align: center;
+  float: left;
+  color: red;
+}
+.kalendar .kalendar-back .back-year {
+  width: 7.5rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  color: red;
+  font-size: 0.75rem;
+  text-align: right;
+  float: right;
+  margin-right: 1.25rem;
+}
+.kalendar .week {
+  width: 15.15rem;
+  height: 1.25rem;
+  border-bottom: 0.025rem solid #333333;
+  padding-left: 0.375rem;
+  padding-right: 0.475rem;
+}
+.kalendar .week span {
+  display: block;
+  width: 2.15rem;
+  height: 1.25rem;
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: 0.625rem;
+  color: #000000;
+  float: left;
+}
+.kalendar .days {
+  width: 15.15rem;
+  height: 19.75rem;
+  padding-top: 2.75rem;
+  background: rgba(153, 204, 204, 0.3);
+  padding-left: 0.375rem;
+  padding-right: 0.475rem;
+}
+.kalendar .days span {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.75rem;
+  font-size: 1rem;
+  background: tan;
+  color: #FFFFFF;
+  display: block;
+  float: left;
+  margin-left: 0.375rem;
+  margin-bottom: 1.25rem;
+}
+.kalendar .days .old {
+  background: #CCCCCC;
+}
+.kalendar .days .active {
+  background: red;
+}
+.kalendar .cut {
+  width: 15.15rem;
+  height: 1.875rem;
+  padding-left: 0.375rem;
+  padding-right: 0.475rem;
+}
+.kalendar .cut span {
+  text-align: center;
+  display: block;
+  width: 5rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  font-size: 1rem;
+  letter-spacing: 0.075rem;
+  color: red;
+}
+.kalendar .cut .prev {
+  float: left;
+}
+.kalendar .cut .next {
+  float: right;
+}
+.photo {
+  width: 15.5rem;
+  height: 100%;
+  margin-top: 0.65rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  overflow: auto;
+}
+.photo p {
+  width: 100%;
+  height: 1rem;
+}
+.photo p span {
+  display: block;
+  width: 5rem;
+  height: 1rem;
+  line-height: 1rem;
+  color: red;
+  font-size: 0.65rem;
+  text-align: center;
+}
+.photo p .photo-back {
+  float: left;
+  width: 1rem;
+  font-size: 1rem;
+}
+.photo p .screen-bg {
+  float: right;
+}
+.photo p .interface-bg {
+  float: right;
+}
+.photo .photo-img {
+  width: 100%;
+}
+.photo .photo-img div {
+  width: 7rem;
+  height: 8.75rem;
+  float: left;
+  position: relative;
+  margin-left: 0.5rem;
+  margin-top: 0.75rem;
+}
+.photo .photo-img div:nth-child(even) {
+  margin-top: 1.25rem;
+}
+.photo .photo-img div span {
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 0.1rem solid #333333;
+  position: absolute;
+  right: -0.375rem;
+  top: -0.375rem;
+}
+.photo .photo-img div .span_true {
+  background: url(../img/true.jpg) no-repeat center center;
+  background-size: cover;
+  border: 0.1rem solid #2e8b57;
+}
+.photo .photo-img div img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.butt {
+  width: 90%;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+#list {
+  width: 2.5rem;
+  height: 1.25rem;
+  background: #000000;
+  color: #FFFFFF;
+  display: block;
 }
